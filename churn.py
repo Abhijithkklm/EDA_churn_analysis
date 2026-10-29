@@ -45,12 +45,12 @@ print("Number of outliers:", len(outliers))
 
 
 
-#
-#
-# outlier_condition = (
-#     (df["MonthlyCharges"] < lower_limit) |
-#    (df["MonthlyCharges"] > upper_limit)
-# )
+
+
+ outlier_condition = (
+     (df["MonthlyCharges"] < lower_limit) |
+    (df["MonthlyCharges"] > upper_limit)
+ )
 
 print(outliers.value_counts())
 print("Actual number of outliers:", outliers.sum())
